@@ -18,133 +18,164 @@
   <meta name="author" content="Deyan_V_Nikolov">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="copyright" content="itpg-varna.bg">
-<link rel = "icon" href = "images/menuicon.png">
-<style>
+  <link rel="icon" href="images/menuicon.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "montserrat";
+      background-image: linear-gradient(125deg, #2c3e50, #2c3e50, #27ae60, #2980b9, #e74c3c, #e74c3c);
+      background-size: 400% 400%;
+      animation: bganimation 10s ease-in-out infinite;
+    }
 
-body{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat";
-  background-image: linear-gradient(125deg,#2c3e50,#2c3e50,#27ae60,#2980b9,#e74c3c,#e74c3c);
-  background-size: 400% 400%;
-  animation: bganimation 10s ease-in-out infinite;
-}
-
-button{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat";
-  background-image: linear-gradient(125deg,#f7ff00, #ff6f00);
-  background-size: 400% 400%;
-  animation: bganimation 5s ease-in-out infinite;
-}
-
-
-@keyframes bganimation {
-  0%{
-    background-position: 0% 50%;
-  }
-  50%{
-    background-position: 100% 50%;
-  }
-  100%{
-    background-position: 0% 50%;
-  }
-}
+    button {
+      margin: 0;
+      padding: 0;
+      font-family: "montserrat";
+      background-image: linear-gradient(125deg, #f7ff00, #ff6f00);
+      background-size: 400% 400%;
+      animation: bganimation 5s ease-in-out infinite;
+    }
 
 
-.button {
-  border: solid;
-  border-color:darkblue;
-  padding: 5px;
-  font-family: sans-serif;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 1px 1px;
-  border-radius: 10px;
-  background-color: darkblue;
-  border: none;
-  color: black;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
+    @keyframes bganimation {
+      0% {
+        background-position: 0% 50%;
+      }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
+      50% {
+        background-position: 100% 50%;
+      }
 
-.underline{
-  text-decoration: underline solid #000000;
-}
-.btn {
-  background-color: darkblue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-    border-radius: 10px;
-}
+      100% {
+        background-position: 0% 50%;
+      }
+    }
 
-.btn:hover {
-  background-color: RoyalBlue;
-  text-decoration: underline solid 	#0000A0;
-}
-.button:hover {
-  background-color: RoyalBlue;
-  text-decoration: underline solid 	#0000A0;
-}
-.navi{
-  background-color: #f3fc44;
-  border: 3px solid #000;
-  cursor: pointer;
-  border-radius: 27px;
-}
 
-</style>
+    .button {
+      border: solid;
+      border-color: darkblue;
+      padding: 5px;
+      font-family: sans-serif;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 1px 1px;
+      border-radius: 10px;
+      background-color: darkblue;
+      border: none;
+      color: black;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .underline {
+      text-decoration: underline solid #000000;
+    }
+
+    .btn {
+      background-color: darkblue;
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 10px;
+    }
+
+    .btn:hover {
+      background-color: RoyalBlue;
+      text-decoration: underline solid #0000A0;
+    }
+
+    .button:hover {
+      background-color: RoyalBlue;
+      text-decoration: underline solid #0000A0;
+    }
+
+    .navi {
+      background-color: #f3fc44;
+      border: 3px solid #000;
+      cursor: pointer;
+      border-radius: 27px;
+    }
+  </style>
 </head>
 
 
 <body>
   <font face="sans-serif">
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <footer class="footer">
-    <p>
-      Last update: 17:00 08/04/2021
-    </p>
-  </footer>
-  <br />
-  <br />
-  <br />
-  <article class="stage">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class="footer">
+      <p>
+        Last update: 17:00 08/04/2021
+      </p>
+    </footer>
+    <br />
+    <br />
+    <br />
+    <article class="stage">
 
-  </article>
-<div class="navigation">
-  <center><h1>Главно меню</h1></center>
+    </article>
+    <div class="navigation">
+      <center>
+        <h1>Главно меню</h1>
+      </center>
 
 
-<table>
-<tr><a href="keks"><center><button class="button">Кекс</button><center></a></tr>
-    <br>
-      <a href="biskvitenibonboni"><tr><center><button class="button">Бисквитени бонбони</button><center></tr></a>
+      <table>
+        <tr><a href="keks">
+            <center><button class="button">Кекс</button>
+            </center>
+          </a></tr>
         <br>
-          <a href="pitka"><tr><center><button class="button">Лесна Питка</button><center></tr></a><br><br><br /><br />
-            <a href="contacts"><tr><center><button class="button">Контакти</button><center></tr></a><br />
-              <a href="copyright-info"><tr><center><button class="button">Информация за copyright</button><center></tr></a>
-</table>
-</div>
+        <a href="biskvitenibonboni">
+          <tr>
+            <center><button class="button">Бисквитени бонбони</button>
+            </center>
+          </tr>
+        </a>
+        <br>
+        <a href="pitka">
+          <tr>
+            <center><button class="button">Лесна Питка</button>
+            </center>
+          </tr>
+        </a><br><br><br /><br />
+        <a href="contacts">
+          <tr>
+            <center><button class="button">Контакти</button>
+            </center>
+          </tr>
+        </a><br />
+        <a href="copyright-info">
+          <tr>
+            <center><button class="button">Информация за copyright</button>
+            </center>
+          </tr>
+        </a>
+      </table>
+  
+    </div>
+    </font>
 </body>
+
 </html>
