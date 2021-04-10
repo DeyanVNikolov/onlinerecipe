@@ -78,7 +78,11 @@
     }
 
     img:hover {
-      transform: rotate(10deg);
+      transform: rotate(15deg) scaleX(1.7) scaleY(1.7) translateX(90px) translateY(-70px);
+      transition: all 1s;
+    }
+    img:not(:hover){
+      transition: all 1s
     }
 
     .btn:hover {
