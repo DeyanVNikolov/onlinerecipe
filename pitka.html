@@ -19,6 +19,10 @@
   <title>Лесна Питка</title>
   <link rel="icon" href="images/pitka.jpg">
   <style>
+    h1 {
+      font-family: sans-serif;
+    }
+
     img {
       border: 4px solid #373737;
       border-radius: 40px;
@@ -27,6 +31,7 @@
 
     li {
       text-align: justify;
+      font-family: sans-serif;
     }
 
     .button {
@@ -44,6 +49,7 @@
       color: white;
       padding: 12px 30px;
       cursor: pointer;
+      font-family: sans-serif;
       font-size: 20px;
     }
 
@@ -51,6 +57,7 @@
       position: fixed;
       left: 0;
       bottom: 0;
+      font-family: sans-serif;
       width: 100%;
       text-align: center;
     }
@@ -62,6 +69,7 @@
     .btn {
       background-color: darkblue;
       border: none;
+      font-family: sans-serif;
       color: white;
       padding: 12px 30px;
       cursor: pointer;
@@ -84,6 +92,7 @@
       background-color: #f3fc44;
       border: 3px solid #000;
       cursor: pointer;
+      font-family: sans-serif;
       border-radius: 27px;
 
     }
@@ -92,7 +101,12 @@
       animation: textAnim 1s ease 0s 1 normal forwards;
     }
 
+    h2 {
+      font-family: sans-serif;
+    }
+
     h3 {
+      font-family: sans-serif;
       animation: textAnim 1s ease 0s 1 normal forwards;
     }
 
@@ -131,109 +145,111 @@
         transform: translateX(0);
       }
     }
+
+    body {
+      background: linear-gradient(90deg, #0095ff 21%, #005dc7 87%);
+    }
   </style>
 </head>
 
-<body style="background: linear-gradient(90deg, #0095ff 21%, #005dc7 87%);">
+<body>
   <div class="main_page">
-    <font face="sans-serif">
-      <div class="navi">
-        <center>
+    <div class="navi">
+      <center>
+        <br />
+        <h2>Навигация</h2>
+
+        <table>
+          <center>
+            <tr>
+              <a href="https://deyanvnikolov.github.io/onlinerecipe/">
+                <button class="button">Menu</button></a>
+
+              <a href="keks"><button class="button">"Кекс"</button></a>
+
+              <a href="biskvitenibonboni"><button class="button">"Бисквитени бонбони"</button></a>
+
+              <a href="pitka"><button disabled class="button">"Лесна Питка"</button></a>
+            </tr>
+          </center>
+
           <br />
-          <h2>Навигация</h2>
+          <br />
 
-          <table>
-            <center>
-              <tr>
-                <a href="https://deyanvnikolov.github.io/onlinerecipe/">
-                  <button class="button">Menu</button></a>
+        </table>
+        <br>
+      </center>
+    </div>
+    <div class="main">
+      <div class="ingredients">
 
-                <a href="keks"><button class="button">"Кекс"</button></a>
+        <h1>Рецепта за питка</h1>
+        <h2>Необходими продукти:</h2>
 
-                <a href="biskvitenibonboni"><button class="button">"Бисквитени бонбони"</button></a>
+        <ul>
 
-                <a href="pitka"><button disabled class="button">"Лесна Питка"</button></a>
-              </tr>
-            </center>
 
-            <br />
-            <br />
-
-          </table>
-          <br>
-        </center>
+          <audio controls>
+            <source src="audio/products_pitka.mp3" type="audio/mpeg">
+          </audio>
+          <li>150 мл. топла вода /топла, а не гореща/</li>
+          <li>една и половина чаени лъжички захар</li>
+          <li>едно пакетче от 7 грама, суха мая</li>
+          <li>една трета чаена чаша кисело мляко /отмерете го точно/</li>
+          <li>50 мл. слънчогледово олио</li>
+          <li>400 грама брашно</li>
+          <li>една чаена лъжичка сол</li>
+          <li>една чаена лъжичка кисело мляко плюс една чаена лъжичка слънчогледово олио за намазване на питката преди
+            печене</li>
+        </ul>
+        <br>
+        <br>
       </div>
-      <div class="main">
-        <div class="ingredients">
-
-          <h1>Рецепта за питка</h1>
-          <h2>Необходими продукти:</h2>
-
-          <ul>
-
-
-            <audio controls>
-              <source src="audio/products_pitka.mp3" type="audio/mpeg">
-            </audio>
-            <li>150 мл. топла вода /топла, а не гореща/</li>
-            <li>една и половина чаени лъжички захар</li>
-            <li>едно пакетче от 7 грама, суха мая</li>
-            <li>една трета чаена чаша кисело мляко /отмерете го точно/</li>
-            <li>50 мл. слънчогледово олио</li>
-            <li>400 грама брашно</li>
-            <li>една чаена лъжичка сол</li>
-            <li>една чаена лъжичка кисело мляко плюс една чаена лъжичка слънчогледово олио за намазване на питката преди
-              печене</li>
-          </ul>
-          <br>
-          <br>
-        </div>
-        <div class="cook">
-          <h2 class="textmove">Начин на приготвяне:</h2>
-          <table>
-            <audio class="audio" controls>
-              <source src="audio/cooking_pitka.mp3" type="audio/mpeg">
-            </audio>
-            <td>
-              <h3 style="text-align: justify;">1. Прибавете маята и захарта към топлата вода.<br> Разбъркайте и оставете
-                за около пет минути, докато шупне. Изсипете шупналата мая в купата на робота.<br>
-                <br>
-                2. Прибавете киселото мляко, солта и олиото. Разбъркайте докато се смесят добре.<br><br>
-                3. На порции започнете да прибавяте брашното при пуснати бъркалки. Ще се получи мека топка.<br><br>
-                4. Застелете дъното на голяма купа със стреч фолио, така, че краищата да висят. <br />Леко намазнете
-                дъното с малко олио и поставете тестото. Намазнете леко с олио и неговата повърхност. <br />Загърнете с
-                висящите краища и оставете съда с тестото на топло, докато удвои обема си.<br /> Може да използвате и
-                фурната, като я включите на програма втасване.<br><br>
-                5. Размесете втасалото тесто за кратко. Ако ви лепне може да добавите една, две супени лъжици брашно.
-                <br />
-                Направете топка.<br><br>
-                6. Покрийте дъното на тава с готварска хартия.<br /> Диаметърът на дъното на моята тавичка е 24
-                сантиметра.
-                <br /> Поставете тестото по средата и го преплескайте с ръце, докато стигне до стените на съда. <br />
-                Направете няколко разреза с остър нож и<br /> оставете вашата лесна питка да втаса отново за около 40
-                минути.<br><br>
-                7. Смесете една чаена лъжичка кисело мляко с една чаена лъжичка олио и намажете втасалата питка.<br><br>
-                8. Изпечете вкусната лесна питка на 180 градуса и вентилатор. <br />Фурната затоплете
-                предварително.<br />
-                Готова е за около 24 минути</h3>
-            </td>
-            <td></td>
-            <td><img style="transform: rotate(6deg);" src="images/pitka.jpg"></td>
-          </table>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
+      <div class="cook">
+        <h2 class="textmove">Начин на приготвяне:</h2>
+        <table>
+          <audio class="audio" controls>
+            <source src="audio/cooking_pitka.mp3" type="audio/mpeg">
+          </audio>
+          <td>
+            <h3 style="text-align: justify;">1. Прибавете маята и захарта към топлата вода.<br> Разбъркайте и оставете
+              за около пет минути, докато шупне. Изсипете шупналата мая в купата на робота.<br>
+              <br>
+              2. Прибавете киселото мляко, солта и олиото. Разбъркайте докато се смесят добре.<br><br>
+              3. На порции започнете да прибавяте брашното при пуснати бъркалки. Ще се получи мека топка.<br><br>
+              4. Застелете дъното на голяма купа със стреч фолио, така, че краищата да висят. <br />Леко намазнете
+              дъното с малко олио и поставете тестото. Намазнете леко с олио и неговата повърхност. <br />Загърнете с
+              висящите краища и оставете съда с тестото на топло, докато удвои обема си.<br /> Може да използвате и
+              фурната, като я включите на програма втасване.<br><br>
+              5. Размесете втасалото тесто за кратко. Ако ви лепне може да добавите една, две супени лъжици брашно.
+              <br />
+              Направете топка.<br><br>
+              6. Покрийте дъното на тава с готварска хартия.<br /> Диаметърът на дъното на моята тавичка е 24
+              сантиметра.
+              <br /> Поставете тестото по средата и го преплескайте с ръце, докато стигне до стените на съда. <br />
+              Направете няколко разреза с остър нож и<br /> оставете вашата лесна питка да втаса отново за около 40
+              минути.<br><br>
+              7. Смесете една чаена лъжичка кисело мляко с една чаена лъжичка олио и намажете втасалата питка.<br><br>
+              8. Изпечете вкусната лесна питка на 180 градуса и вентилатор. <br />Фурната затоплете
+              предварително.<br />
+              Готова е за около 24 минути</h3>
+          </td>
+          <td></td>
+          <td><img style="transform: rotate(6deg);" src="images/pitka.jpg"></td>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
       </div>
-      <div class="contact">
-        <h2>Пишете ни ако имате въпроси</h2>
-        <a href="contacts">
-          <tr><button class="btn">Контакти</button></tr>
-        </a>
-      </div>
-    </font>
+    </div>
+    <div class="contact">
+      <h2>Пишете ни ако имате въпроси</h2>
+      <a href="contacts">
+        <tr><button class="btn">Контакти</button></tr>
+      </a>
+    </div>
   </div>
 </body>
 

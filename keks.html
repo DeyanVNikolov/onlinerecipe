@@ -27,6 +27,7 @@
 
     li {
       text-align: justify;
+      font-family: sans-serif;
     }
 
     .button {
@@ -35,6 +36,7 @@
       padding: 5px;
       text-align: center;
       text-decoration: none;
+      font-family: sans-serif;
       display: inline-block;
       font-size: 15px;
       margin: 1px 1px;
@@ -52,6 +54,7 @@
       left: 0;
       bottom: 0;
       width: 100%;
+      font-family: sans-serif;
       text-align: center;
     }
 
@@ -67,6 +70,7 @@
       cursor: pointer;
       font-size: 20px;
       border-radius: 10px;
+      font-family: sans-serif;
 
     }
 
@@ -92,7 +96,18 @@
       animation: textAnim 1s ease 0s 1 normal forwards;
     }
 
+    h2 {
+      font-family: sans-serif;
+
+    }
+
+    h1 {
+      font-family: sans-serif;
+    }
+
     h3 {
+
+      font-family: sans-serif;
       animation: textAnim 1s ease 0s 1 normal forwards;
     }
 
@@ -131,96 +146,100 @@
         transform: translateX(0);
       }
     }
+
+    body {
+      background: linear-gradient(90deg, #f7ff00 21%, #ff6f00 87%);
+    }
   </style>
 </head>
 
-<body style="background: linear-gradient(90deg, #f7ff00 21%, #ff6f00 87%);">
+<body>
   <div class="main_page">
-    <font face="sans-serif">
-      <div class="navi">
-        <center>
-          <br />
-          <h2>Навигация</h2>
 
-          <table>
-            <center>
-              <tr>
-                <a href="https://deyanvnikolov.github.io/onlinerecipe/">
-                  <button class="button">Menu</button></a>
-
-                <a href="keks"><button disabled class="button">"Кекс"</button></a>
-
-                <a href="biskvitenibonboni"><button class="button">"Бисквитени бонбони"</button></a>
-
-                <a href="pitka"><button class="button">"Лесна Питка"</button></a>
-              </tr>
-            </center>
-
-            <br />
-            <br />
-
-          </table>
-          <br>
-        </center>
-      </div>
-      <div class="ingredients">
+    <div class="navi">
+      <center>
         <br />
-        <h2>Рецепта за кекс</h2>
+        <h2>Навигация</h2>
 
-        <h2>Необходими продукти:</h2>
-
-        <ul>
-          <audio controls>
-            <source src="audio/products_keks.mp3" type="audio/mpeg">
-          </audio>
-          <br />
-          <br />
-          <strong>
-            <li>1 1/2 ч. чаша брашно</li>
-            <li>1 ч.чаша захар</li>
-            <li>2 яйца</li>
-            <li>1/2 ч. чаша олио</li>
-            <li>1/2ч. чаша портокалов сок</li>
-            <li>1ч.л. бакпулувер</li>
-            <li>1 ванилия</li>
-            <li>1 шепа нарязани орехи</li>
-          </strong>
-        </ul>
-        <br>
-        <br>
-      </div>
-      <div class="cook">
-        <h2 class="textmove">Начин на приготвяне:</h2>
         <table>
-          <td>
-            <audio class="audio" controls>
-              <source src="audio/cooking_keks.mp3" type="audio/mpeg">
-            </audio>
-            <h3>Захарта и яйцата се разбиват с помощта на миксер. Разбивайки се добавя олиото и портокаловия сок.<br>
-              Брашното се смесва с бакпулувера и ванилията. Тази смес се добавя към сместа с яйцата.<br>
-              Разбива се всичко с миксер.<br>
-              Настъргва се кора от лимон. Към част от готовата смес се добавя какао.<br>
-              Във формичка се добавят смесите и най-отгоре се поставят орехите.<br>
-              Пече се на 150 градуса 60 минути.</h3>
-          </td>
-          <td>
-          </td>
-          <td><img style="transform: rotate(6deg);" src="images/keksicon.jpg"></td>
+          <center>
+            <tr>
+              <a href="https://deyanvnikolov.github.io/onlinerecipe/">
+                <button class="button">Menu</button></a>
+
+              <a href="keks"><button disabled class="button">"Кекс"</button></a>
+
+              <a href="biskvitenibonboni"><button class="button">"Бисквитени бонбони"</button></a>
+
+              <a href="pitka"><button class="button">"Лесна Питка"</button></a>
+            </tr>
+          </center>
+
+          <br />
+          <br />
+
         </table>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-      <div class="contact">
+      </center>
+    </div>
+    <div class="ingredients">
+      <br />
+      <h1>Рецепта за кекс</h1>
 
-        <h2>Пишете ни ако имате въпроси</h2>
-        <a href="contacts">
-          <tr><button class="btn">Контакти</button></tr>
-        </a>
-      </div>
-    </font>
+      <h2>Необходими продукти:</h2>
+
+      <ul>
+        <audio controls>
+          <source src="audio/products_keks.mp3" type="audio/mpeg">
+        </audio>
+        <br />
+        <br />
+        <strong>
+          <li>1 1/2 ч. чаша брашно</li>
+          <li>1 ч.чаша захар</li>
+          <li>2 яйца</li>
+          <li>1/2 ч. чаша олио</li>
+          <li>1/2ч. чаша портокалов сок</li>
+          <li>1ч.л. бакпулувер</li>
+          <li>1 ванилия</li>
+          <li>1 шепа нарязани орехи</li>
+        </strong>
+      </ul>
+      <br>
+      <br>
+    </div>
+    <div class="cook">
+      <h2 class="textmove">Начин на приготвяне:</h2>
+      <table>
+        <td>
+          <audio class="audio" controls>
+            <source src="audio/cooking_keks.mp3" type="audio/mpeg">
+          </audio>
+          <h3>Захарта и яйцата се разбиват с помощта на миксер. Разбивайки се добавя олиото и портокаловия сок.<br>
+            Брашното се смесва с бакпулувера и ванилията. Тази смес се добавя към сместа с яйцата.<br>
+            Разбива се всичко с миксер.<br>
+            Настъргва се кора от лимон. Към част от готовата смес се добавя какао.<br>
+            Във формичка се добавят смесите и най-отгоре се поставят орехите.<br>
+            Пече се на 150 градуса 60 минути.</h3>
+        </td>
+        <td>
+        </td>
+        <td><img style="transform: rotate(6deg);" src="images/keksicon.jpg"></td>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="contact">
+
+      <h2>Пишете ни ако имате въпроси</h2>
+      <a href="contacts">
+        <tr><button class="btn">Контакти</button></tr>
+      </a>
+    </div>
+
   </div>
 </body>
 
