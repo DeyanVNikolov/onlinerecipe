@@ -24,19 +24,11 @@
       margin: 0;
       padding: 0;
       font-family: "montserrat";
-      background-image: linear-gradient(125deg, #2c3e50, #2c3e50, #27ae60, #2980b9, #e74c3c, #e74c3c);
+      background-image:linear-gradient(125deg, #4aa5ff, #0044ff, #16ff0e, #ff8800, #ff1900, #ff1d04);
       background-size: 400% 400%;
       animation: bganimation 10s ease-in-out infinite;
     }
 
-    button {
-      margin: 0;
-      padding: 0;
-      font-family: "montserrat";
-      background-image: linear-gradient(125deg, #f7ff00, #ff6f00);
-      background-size: 400% 400%;
-      animation: bganimation 5s ease-in-out infinite;
-    }
 
 
     @keyframes bganimation {
@@ -66,10 +58,10 @@
       font-size: 15px;
       margin: 1px 1px;
       border-radius: 10px;
-      background-color: darkblue;
+      background-color: rgba(90, 203, 255, 0.979);
       border: none;
       color: black;
-      padding: 12px 30px;
+      padding: 6px 25px;
       cursor: pointer;
       font-size: 20px;
     }
@@ -103,8 +95,13 @@
     }
 
     .button:hover {
-      background-color: RoyalBlue;
       text-decoration: underline solid #0000A0;
+      transform: scaleX(1.3) scaleY(1.3) rotate(5deg);
+      background-color: rgb(255, 187, 0);
+      transition: all 1s
+    }
+    .button:not(:hover) {
+      transition: all 1s
     }
 
     .navi {
@@ -135,11 +132,6 @@
     <br />
     <br />
     <br />
-    <footer class="footer">
-      <p>
-        Last update: 13:51 10/04/2021
-      </p>
-    </footer>
     <br />
     <br />
     <br />
@@ -153,10 +145,12 @@
 
 
       <table>
-        <tr><a href="keks">
+        <a href="keks">
+          <tr>
             <center><button class="button">Кекс</button>
             </center>
-          </a></tr>
+          </tr>
+        </a>
         <br>
         <a href="biskvitenibonboni">
           <tr>
